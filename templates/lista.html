@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Aula de Python com HTML</title>
+
+        <style type="text/css">
+
+            table, tr, th, td{
+                border: 1px solid #000000;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <!-- 
+            a linha abaixo que esta entre chaves
+            é uma variavel que sera apresentada
+        -->
+        <h2>{{ titulo }}</h2>
+
+        <table>
+            <tr>
+                <th>Titulo</th>
+                <th>Duração</th>
+            </tr>
+            
+            {% for filme in todosFilmes %}
+            <tr>
+                <td>{{ filme }}</td>
+            </tr>
+            {%  endfor %}
+
+
+        <!--
+            <tr>
+                <td>Matrix</td>
+                <td>84 min.</td>
+            </tr>
+
+            <tr>
+                <td>O sucessor</td>
+                <td>96 min.</td>
+            </tr>
+        -->
+
+        </table>
+
+    </body>
+
+</html>
