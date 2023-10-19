@@ -30,7 +30,8 @@
             
             {% for filme in todosFilmes %}
             <tr>
-                <td>{{ filme }}</td>
+                <td>{{ filme.titulo }}</td>
+                <td>{{ filme.duracao }}</td>
             </tr>
             {%  endfor %}
 
